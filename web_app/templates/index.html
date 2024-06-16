@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de recimendación de Películas: KRY-Movies</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Encabezado del sitio -->
+    <div class="header">
+        <h2>Sistema KRY - Movies</h2>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h3>Bienvenido a nuestra plataforma de recomendación de películas</h3>
+    </div>
+
+    <main>
+        <!-- Sección de entrada de usuario -->
+        <section id="user-input">
+            <h2>Ingresa tu ID de usuario</h2>
+            <!-- Formulario para enviar el ID de usuario -->
+            <form action="/recommend" method="post">
+                <input type="number" name="user_id" required>
+                <button type="submit">Obtener Recomendaciones</button>
+            </form>
+        </section>
+
+        <!-- Sección de películas destacadas -->
+        <section id="featured-movies">
+            <h2>Películas Destacadas</h2>
+            <!-- Carrusel de películas destacadas -->
+            <div class="carousel">
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="{{ url_for('static', filename='images/movie1.jpg') }}" alt="Título de la Película 1">
+                    <div class="slide-content">
+                        <h3>Nausicaä del Valle del Viento</h3>
+                    </div>
+                </div>
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="{{ url_for('static', filename='images/movie2.jpg') }}" alt="Título de la Película 2">
+                    <div class="slide-content">
+                        <h3>El Increíble Castillo Vagabundo</h3>
+                    </div>
+                </div>
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="{{ url_for('static', filename='images/movie3.jpg') }}" alt="Título de la Película 3">
+                    <div class="slide-content">
+                        <h3>El Viaje de Chihiro</h3>
+                    </div>
+                </div>
+                <!-- Slide 1 -->
+                <div class="slide">
+                    <img src="{{ url_for('static', filename='images/movie4.jpg') }}" alt="Título de la Película 3">
+                    <div class="slide-content">
+                        <h3>La Princesa Mononke</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 - STGonzalezT</p>
+    </footer>
+</body>
+</html>

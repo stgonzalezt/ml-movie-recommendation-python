@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de recimendación de Películas: KRY-Movies</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Encabezado del sitio -->
+    <div class="header">
+        <h2>Sistema KRY - Movies</h2>
+    </div>
+    
+    <main>
+        <!-- Sección de entrada de usuario -->
+        <section id="user-input">
+            <h2>Películas que te podrían gustar</h2>
+            <!-- Tabla para mostrar las recomendaciones de películas -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Géneros</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se generan dinámicamente las recomendaciones -->
+                    {% for movie in recommendations %}
+                        <tr>
+                            <td>{{ movie.title }}</td>
+                            <td>{{ movie.genres }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <!-- Botón para regresar a la página de inicio -->
+            <div class="back-to-home">
+                <a href="{{ url_for('home') }}" class="btn">Realizar otra consulta</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 - STGonzalezT</p>
+    </footer>
+</body>
+</html>
