@@ -5,7 +5,6 @@
     - [Tecnologías necesarias](#tecnologías-necesarias)
     - [Instalación](#instalación)
     - [Implementación](#implementación)
-    - [Estructura del proyecto](#estructura-del-proyecto)
 
 ### Nombre del proyecto
 ***
@@ -50,48 +49,4 @@ $ python src/model.py
 Ejecuta la aplicación web para recibir recomendaciones personalizadas
 ```
 $ python web_app/app.py
-```
-
-### Estructura del proyecto
-ml-movie-recommendation-python/
-│
-├── data/
-│   ├── processed/       
-|   |    |──movies_cleaned.csv
-|   |    |──ratings_cleaned.csv
-|   |    |__tags_cleaned.csv 
-|   |
-|   └── raw/             
-|        |──movies.csv
-|        |──ratings.csv
-|        |__tags.csv
-|        └──links.csv
-|
-|── notebooks/
-|        └──exploratory_data_analysis.ipynb
-│
-├── src/     
-|   ├── __init__.py
-|   ├── data_processing.py            
-│   ├── model.py         
-│   ├── recommend.py
-|   └── trained_model.pkl 
-|
-├── tests/               
-│   ├── __init__.py  
-│   └── test_model.py     
-│
-├── web_app/ 
-|   |── static/
-|   |     ├── css/
-|   |     └── images/ 
-|   |                      
-│   ├── templates/  
-|   |     ├── index.html
-|   |     └──recommendations.html
-|   |
-|   └── trained_model.pkl      
-│   └── app.py        
-│            
-└── README.md           
-
+```     
