@@ -3,8 +3,6 @@
     - [Nombre del proyecto](#nombre-del-proyecto)
     - [GDescripción](#gdescripción)
     - [Tecnologías necesarias](#tecnologías-necesarias)
-    - [Instalación](#instalación)
-    - [Implementación](#implementación)
 
 ### Nombre del proyecto
 ***
@@ -29,24 +27,4 @@ Lista de las tecnologías usadas en este proyecto:
 * [Flask](https://flask.palletsprojects.com/en/3.0.x/): Version 3.0.3
 * [MovieLens Latest Datasets](https://grouplens.org/datasets/movielens/): Last updated 9/2018
 * [Microsoft Visual Studio (Build Tools)](https://visualstudio.microsoft.com/es/downloads/): Version 2022
-* [Visual Studio Code (VS Code)](https://code.visualstudio.com): Version 1.90
-* 
-### Instalación
-***
-Clona el repositorio
-```
-$ git clone https://github.com/tu_usuario/tu_proyecto.git
-$ cd ml-movie-recommendation-python
-```
-Instala las dependencias necesarias
-
-### Implementación
-***
-Entrenamiento del Modelo de recomendación 
-```
-$ python src/model.py
-```
-Ejecuta la aplicación web para recibir recomendaciones personalizadas
-```
-$ python web_app/app.py
-```     
+* [Visual Studio Code (VS Code)](https://code.visualstudio.com): Version 1.90 
